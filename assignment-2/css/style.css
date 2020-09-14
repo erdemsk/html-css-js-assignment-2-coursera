@@ -1,1 +1,163 @@
+/* to provide border-box */
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
 
+/* center the heading and give it a margin*/
+
+h1{
+	text-align:center;
+	margin:20px;
+}
+
+/* styling sections, use "display:inline-block" to view them at the same row. remove the
+right-margin to avoid cumulative margin and having same margin both on the left and right side. */
+
+#main1 {
+	position:relative;
+	width: 300px;
+	background-color:#dcd4d4;
+	margin:20px;
+	margin-right:0px;
+	display:inline-block;
+}
+
+#main2 {
+	position:relative;
+	width: 300px;
+	background-color:#dcd4d4;
+	margin:20px;
+	margin-right:0px;
+	display:inline-block;
+}
+
+#main3 {
+	position:relative;
+	width: 300px;
+	background-color:#dcd4d4;
+	margin:20px;
+	margin-right:0px;
+	display:inline-block;
+}
+
+/* styling title sections. relationship between the "width" and "right" is important */
+#title1 {
+	position:relative;
+	width: 30%;
+	color:#f6f8ff;
+	background-color:#d02a58;
+	top:0px;
+	right:-70%;
+	text-align:center;
+	border: 1px solid #000000;
+	padding:3px;
+}
+
+#title2 {
+	position:relative;
+	width: 30%;
+	background-color:#29e0c7;
+	top:0px;
+	right:-70%;
+	text-align:center;
+	border: 1px solid #000000;
+	padding:3px;
+}
+
+#title3 {
+	position:relative;
+	width: 30%;
+	background-color:#bbaf1e;
+	top:0px;
+	right:-70%;
+	text-align:center;
+	border: 1px solid #000000;
+	padding:3px;
+}
+
+/* styling text, align it to the left and give some padding */
+#text1 {
+	position:relative;
+	top:0px;
+	padding:5px;
+	text-align:left;
+}
+
+#text2 {
+	position:relative;
+	top:0px;
+	padding:5px;
+	text-align:left;
+}
+
+#text3 {
+	position:relative;
+	top:0px;
+	padding:5px;
+	text-align:left;
+}
+
+/* Desktop view */
+@media (min-width:992px) {
+	#main1 {
+		width:25%;
+		margin:2%;
+		margin-right:0%; /* to avoid cumulative margin */
+	}
+
+	#main2 {
+		width:25%;
+		margin:2%;
+		margin-right:0%;
+	}
+
+	#main3 {
+		width:25%;
+		margin:2%;
+		margin-right:0%;
+	}
+}
+
+/* Tablet view */
+@media (min-width:768px) and (max-width:991px) {
+	#main1 {
+		width:30%;
+		margin-left:5%;
+		margin-bottom:2%;
+		float:left; /* to avoid little space between main1 and main2 */
+	}
+
+	#main2 {
+		width:30%;
+		margin-left:5%;
+		margin-bottom:2%;
+
+	}
+
+	#main3 {
+		width:65%;
+		margin:5%;
+		margin-top:2%;
+	}
+}
+
+/* Mobile view */
+@media (max-width:767px) {
+	#main1 {
+		width:75%;
+		margin:5%;
+	}
+
+	#main2 {
+		width:75%;
+		margin:5%;
+	}
+
+	#main3 {
+		width:75%;
+		margin:5%;
+	}
+
+}
